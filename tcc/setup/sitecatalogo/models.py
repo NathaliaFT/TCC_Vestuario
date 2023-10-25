@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 from django.contrib.auth.models import User
+from django.conf import settings
 
 class Catalogo(models.Model):
 
@@ -28,3 +29,12 @@ class Catalogo(models.Model):
 
     def __str__(self):
         return self.name
+
+
+
+class Usuario(models.Model):
+    nome = models.CharField(max_length=100)
+    email = models.EmailField(unique=True) 
+    password = models.CharField(max_length=200)  
+
+        
