@@ -1,5 +1,7 @@
-{% include 'partials/header.html' %}
+{% extends 'extends.html' %}
 {% load static %}
+{% include 'partials/header.html' %}
+{% block content %}
 
 
     <section class="catalog" id="catalog">
@@ -20,7 +22,7 @@
           <div class="card-item">
             <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
             <div class="card-content">
-              <h3>oijioj</h3>
+              <h3>Lorem ipsum dolor sit amet</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Repellendus.
@@ -148,3 +150,4 @@
       {% include 'partials/footer.html' %}
   </body>
 </html>
+{% endblock %}
