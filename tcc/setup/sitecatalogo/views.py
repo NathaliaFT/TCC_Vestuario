@@ -10,6 +10,9 @@ from .forms import LoginForm
 def index(request):
     return render(request, 'index.html')
 
+def categoria(request):
+    return render(request, 'categoria.html')
+
 
 def registro_usuario(request):
     if request.method == 'POST':

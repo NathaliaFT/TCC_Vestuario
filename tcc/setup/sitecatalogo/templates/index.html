@@ -1,8 +1,7 @@
 {% extends 'extends.html' %}
 {% load static %}
-{% include 'partials/header.html' %}
 {% block content %}
-
+{% include 'partials/header.html' %}
 
     <section class="catalog" id="catalog">
       <div class="content">
@@ -18,103 +17,8 @@
           />
           <button class="search-button">Pesquisar</button>
         </div>
-        <div class="card-wrapper">
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>Lorem ipsum dolor sit amet</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
-              <button type="button">I want this!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>uby</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
-              <button type="button">I want this!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>inhuih</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
-              <button type="button">I want this!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>ihuih</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
-              <button type="button">I want this!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>hiuhui</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
-              <button type="button">I want this!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>ihuh</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
-              <button type="button">I want this!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>uhuh</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
-              <button type="button">I want this!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>ijij</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
-              <button type="button">I want this!</button>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src='{% static "assets/img/felicidade.png" %}' alt="feliz" />
-            <div class="card-content">
-              <h3>ijiuj</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus.
-              </p>
+        {% include 'partials/card.html' %}
+
               <button type="button">I want this!</button>
             </div>
           </div>
