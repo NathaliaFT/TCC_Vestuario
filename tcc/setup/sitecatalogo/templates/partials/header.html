@@ -1,0 +1,17 @@
+{% load static %}
+
+    <header>
+      <div class="content">
+        <nav>
+          <p class="brand">Urbano<strong>Fino</strong></p>
+
+          <ul>
+            <li><a href={% url 'index' %} class="active">Home</a></li>
+            <li><a href={% url 'index' %} class="active"><a href ="#about">Sobre Nós</a></li>
+            <li><a href={% url 'categoria' %} class="active">Categorias</a></li>
+            <a href={% url 'user_login' %}>
+            <button >Login</button>
+            </a>
+          </ul>
+        </nav>
+      

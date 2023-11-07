@@ -1,15 +1,15 @@
+{% extends 'extends.html' %}
+{% load static %}
+{% block content %}
+{% include 'partials/header.html' %}
+{% include 'partials/banner.html' %}
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina inicial</title>
-</head>
-<body>
+        {% include 'partials/card.html' %}
 
-<h2>Pagina inicial</h2>
+        {% include 'partials/about.html' %}
 
 
-</body>
+      {% include 'partials/footer.html' %}
+  </body>
 </html>
+{% endblock %}
